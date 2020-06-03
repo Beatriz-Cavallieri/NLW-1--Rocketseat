@@ -1,0 +1,60 @@
+//configurações principais para todas as páginas
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $title-color;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: $bg-color;
+    margin: 0;
+}
+
+//configurações do header para todas as páginas
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    span {
+        display: flex;
+        background-image: url('../assets/log-in.svg');
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    a {
+        display: flex;
+        margin-left: 16px;
+        color: $title-color;
+        font-weight: 700;
+    }
+}
+
+//responsividade do header
+@media (max-width: 900px) {
+    header img,
+    header a {
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header a {
+        bottom: 48px;
+    }
+}
