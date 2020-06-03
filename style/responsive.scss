@@ -1,18 +1,24 @@
 @media (max-width: 900px) {
+    header img,
+    header a {
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header a {
+        bottom: 48px;
+    }
+    .container {
+        align-items: center;
+        text-align: center;
+    }
     #home-page {
         background-position-x: 70vw;
-        .container {
-            align-items: center;
-            text-align: center;
-        }
+        
         main {
             align-items: center;
-        }
-        header a {
-            position: absolute;
-            bottom: 48px;
-            left: 50%;
-            transform: translateX(-60%);
         }
     }
 }
