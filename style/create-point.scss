@@ -1,4 +1,6 @@
 @import './_variables';
+@import './_header';
+@import './_responsive';
 
 #create-point-page {
     height: 100vh;
@@ -11,24 +13,4 @@
     max-width: 1100px;
     display: flex;
     flex-direction: column;
-}
-
-#create-point-page header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 45px;
-    span {
-        display: flex;
-        background-image: url('../assets/arrow-left.svg');
-        width: 24px;
-        height: 24px;
-    }
-    a {
-        align-items: center;
-        display: flex;
-        margin-left: 16px;
-        color: $title-color;
-        font-weight: 700;
-    }
 }

@@ -1,3 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #322153;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #f0f0f5;
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 45px;
+}
+
+header span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../assets/log-in.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 16px;
+  color: #322153;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  header img,
+  header a {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  header a {
+    bottom: 48px;
+  }
+}
+
 #home-page {
   height: 100vh;
   background: url("../assets/home-background.svg") no-repeat;
@@ -16,37 +89,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#home-page header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 45px;
-}
-
-#home-page header span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-image: url("../assets/log-in.svg");
-  width: 20px;
-  height: 20px;
-}
-
-#home-page header a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 16px;
-  color: #322153;
-  font-weight: 700;
 }
 
 #home-page main {
