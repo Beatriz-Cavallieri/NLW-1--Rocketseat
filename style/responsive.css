@@ -1,0 +1,36 @@
+@media (max-width: 900px) {
+  #home-page {
+    background-position-x: 70vw;
+  }
+  #home-page .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #home-page main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #home-page header a {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+  }
+}
+
+@media (min-width: 1700px) {
+  #home-page {
+    background-position-x: 40vw;
+  }
+}
+
+@media (max-height: 760px) {
+  #home-page {
+    background-position-y: 100px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
