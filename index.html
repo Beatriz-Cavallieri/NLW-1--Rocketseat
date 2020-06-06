@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/home.css">
-    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/modal.css">
+    <link rel="stylesheet" href="/style/responsive.css">
     <title>Ecoleta</title>
 </head>
 
@@ -20,10 +21,29 @@
             <main>
                 <h1>Seu marketplace de coleta de resíduos</h1>
                 <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</p>
-                <a href=""><span></span><strong>Pesquisar pontos de coleta</strong></a>
+                <a href="#" id="go-to-search"><span></span><strong>Pesquisar pontos de coleta</strong></a>
             </main>
         </div>
     </div>
+
+    <div id="modal" class="hide">
+        <div class="content-modal">
+            <div class="header">
+                <h1>Pontos de coleta</h1>
+                <a href="#" id="close">Fechar</a>
+            </div>
+            <form action="">
+                <label for="search">Cidade ou Estado</label>
+                <div class="search field">
+                    <input type="text" name="search" placeholder="Pesquise por cidade">
+                    <button>
+                        <img src="/assets/search.svg" alt="Buscar">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/scripts/home.js"></script>
 </body>
 
 </html>

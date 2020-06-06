@@ -1,0 +1,91 @@
+#modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#modal .content {
+  color: white;
+  width: 420px;
+}
+
+#modal .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 48px;
+}
+
+#modal .header a {
+  background-image: url("../assets/x.svg");
+  width: 20px;
+  height: 20px;
+  font-size: 0.01px;
+}
+
+#modal .header h1 {
+  color: white;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+#modal form label {
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#modal form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#modal form input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6c6c80;
+}
+
+#modal form button {
+  width: 72px;
+  height: 72px;
+  background-color: #34cb79;
+  border-radius: 0 8px 8px 0;
+  border: none;
+}
+
+#modal form button:hover {
+  background-color: #2fb86e;
+}
+
+#modal.hide {
+  display: none;
+}
+/*# sourceMappingURL=modal.css.map */
