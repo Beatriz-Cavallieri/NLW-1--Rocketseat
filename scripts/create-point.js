@@ -11,7 +11,6 @@ function populateUF() {
             ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`;
         }        
     })
-    console.log("flw");
 }
 
 function populateCity(value) {
@@ -26,5 +25,26 @@ function populateCity(value) {
         }  
         citySelect.disabled = false;  
     })
+}
+
+// seleção de itens de coleta
+const itemsCollect = document.querySelectorAll(".items-grid li");
+const inputSelectedItems = document.getElementById("selectedItems");
+let selectedItems = [];
+
+for (let item of itemsCollect) {
+    item.addEventListener("click", e => {
+        const itemId = event.target.dataset.id;
+        event.target.classList.toggle("selected");
+        let alreadySelected = selectedItems.findIndex(item => item == itemId);
+        if (alreadySelected != -1) {
+            const filtered = selectedItems.filter(item => item != itemId);
+            selectedItems = filtered;
+        }
+        else {
+            selectedItems.push(parseInt(itemId));
+        }
+        inputSelectedItems.value = selectedItems;
+    });
 }
 
