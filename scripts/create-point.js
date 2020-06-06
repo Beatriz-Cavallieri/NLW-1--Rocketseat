@@ -23,7 +23,8 @@ function populateCity(value) {
     .then( cities => {
         for (let city of cities) {
             citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
-        }        
+        }  
+        citySelect.disabled = false;  
     })
 }
 

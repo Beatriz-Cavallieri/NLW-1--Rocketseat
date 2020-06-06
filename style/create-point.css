@@ -169,4 +169,10 @@ button {
 button:hover {
   background-color: #2fb86e;
 }
+
+@media (max-width: 900px) {
+  header a {
+    visibility: hidden;
+  }
+}
 /*# sourceMappingURL=create-point.css.map */

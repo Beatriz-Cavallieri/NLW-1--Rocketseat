@@ -76,3 +76,10 @@ button {
         background-color: $darker-green;
     }
 }
+
+@media (max-width: 900px) {
+    //oculta o link de retorno à página anterior
+    header a {
+        visibility: hidden;
+    }
+}
