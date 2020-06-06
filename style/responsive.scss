@@ -10,6 +10,10 @@
             align-items: center;
         }
     }
+    #page-results .cards {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
 }
 
 @media (min-width: 1700px) {

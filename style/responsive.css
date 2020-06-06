@@ -13,6 +13,11 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  #page-results .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: left;
+  }
 }
 
 @media (min-width: 1700px) {

@@ -1,0 +1,55 @@
+@import './_header';
+@import './_variables';
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.cards {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+h4 {
+    margin-top: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: $text-gray;
+}
+
+.card {
+    h1{
+        margin: 32px 0 24px;
+        font-size: 36px;
+        line-height: 41px;
+        color: $title-color;
+    }
+    h3{
+        color: $primary-green;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34px;
+    }
+    img {
+        height: 150px;
+        width: 100%;
+    }
+    p {
+        color: $text-gray;
+    }
+}
+
+.background {
+    background-color: white;
+    position: fixed;
+    top:260px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
