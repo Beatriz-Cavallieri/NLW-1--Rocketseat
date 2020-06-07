@@ -1,0 +1,20 @@
+{
+  "name": "NLW",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beatriz-Cavallieri/rocketseat-NLW.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Beatriz-Cavallieri/rocketseat-NLW/issues"
+  },
+  "homepage": "https://github.com/Beatriz-Cavallieri/rocketseat-NLW#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1"
+  }
+}
