@@ -18,7 +18,7 @@
                 <a href="/"><span></span>Voltar para a página anterior</a>
             </header>
             <main>
-                <form action="">
+                <form action="/savepoint" method="POST">
                     <h1>Cadastro do ponto de coleta</h1>
                     <fieldset>
                         <legend>
@@ -85,12 +85,19 @@
                         </div>
                         <input type="hidden" name="selectedItems" id="selectedItems">
                     </fieldset>
-                    <button>Cadastrar ponto de coleta</button>
+                    <button type="submit">Cadastrar ponto de coleta</button>
                 </form>
             </main>
         </div>
     </div>
-    <script src="./scripts/create-point.js"></script>
+    {% block modal %}
+        {% if saved %}
+            {%include "partials/point-created.html"%}
+        {% endif %}
+    {% endblock modal %}
+    {% block scripts %}
+        <script src="./scripts/create-point.js"></script>
+    {% endblock scripts %}
 </body>
 
 </html>
